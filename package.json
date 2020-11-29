@@ -1,0 +1,30 @@
+{
+  "name": "hubpod",
+  "version": "0.1.0",
+  "description": "aplication with javascript and nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && babel src -d dist",
+    "serve": "npm run build && node dist/index.js",
+    "watch": "nodemon -w src --exec npm run serve",
+    "fix": "eslint src --fix",
+    "lint": "eslint src"
+  },
+  "author": "santiago pascual",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "husky": "^4.3.0",
+    "nodemon": "^2.0.6",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
