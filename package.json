@@ -9,7 +9,8 @@
     "serve": "npm run build && node dist/index.js",
     "watch": "nodemon -w src --exec npm run serve",
     "fix": "eslint src --fix",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "precommit": "npm run lint"
   },
   "author": "santiago pascual",
   "license": "MIT",

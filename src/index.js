@@ -5,8 +5,8 @@ const http = require('http');
 
 const requestHandler = (req, res) => {
   res.writeHeader(200, { ContentType: 'text/plain' });
-  res.end('Hello World my friends!!!');
-};
+  res.end('Hello World my friends!!!')
+}
 
 const server = http.createServer(requestHandler);
 
